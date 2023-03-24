@@ -6,18 +6,6 @@ comparison:
     number_of_comparison_results: 1
     aggregate_function: avg
 objectives:
-    - sli: time_eu_eap_-_individualprofileandcoverages_v9
-      displayName: time (EU EAP - IndividualProfileAndCoverages_V9)
-      pass: []
-      warning: []
-      weight: 1
-      key_sli: false
-    - sli: time_eu_eap_-_individualprofileandcoverages_v9
-      displayName: time (EU EAP - IndividualProfileAndCoverages_V9)
-      pass: []
-      warning: []
-      weight: 1
-      key_sli: false
     - sli: errors
       displayName: errors
       pass:
@@ -28,6 +16,12 @@ objectives:
         - criteria:
             - '>=0.000000'
             - <50.000000
+      weight: 1
+      key_sli: false
+    - sli: time
+      displayName: time
+      pass: []
+      warning: []
       weight: 1
       key_sli: false
 total_score:
