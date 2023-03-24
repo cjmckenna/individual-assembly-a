@@ -20,8 +20,14 @@ objectives:
       key_sli: false
     - sli: time
       displayName: time
-      pass: []
-      warning: []
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <1000000.000000
+      warning:
+        - criteria:
+            - '>=0.000000'
+            - <1500000.000000
       weight: 1
       key_sli: false
 total_score:
