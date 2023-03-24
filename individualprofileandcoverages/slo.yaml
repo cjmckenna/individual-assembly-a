@@ -1,0 +1,35 @@
+spec_version: ""
+filter: {}
+comparison:
+    compare_with: single_result
+    include_result_with_score: pass
+    number_of_comparison_results: 1
+    aggregate_function: avg
+objectives:
+    - sli: graph_eu_eap_-_individualprofileandcoverages_v9
+      displayName: Graph (EU EAP - IndividualProfileAndCoverages_V9)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: graph_eu_eap_-_individualprofileandcoverages_v9
+      displayName: Graph (EU EAP - IndividualProfileAndCoverages_V9)
+      pass: []
+      warning: []
+      weight: 1
+      key_sli: false
+    - sli: errors
+      displayName: errors
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <10.000000
+      warning:
+        - criteria:
+            - '>=0.000000'
+            - <50.000000
+      weight: 1
+      key_sli: false
+total_score:
+    pass: 90%
+    warning: 75%
